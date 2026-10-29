@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leave a review</title>
+  <title>Leave us a review</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 2rem 1rem; }
-    a.btn { display: block; max-width: 320px; margin: .8rem auto; padding: .9rem 1rem;
-            background: #1877f2; color: #fff; border-radius: 8px; text-decoration: none; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f0f2f5; color: #1c1e21; }
+    .wrap { max-width: 440px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+    h1 { font-size: 1.5rem; text-align: center; margin-bottom: .3rem; }
+    .sub { text-align: center; color: #65676b; margin-bottom: 1.5rem; }
+    .step { background: #fff; border-radius: 12px; padding: 1rem; margin-bottom: .8rem;
+            display: flex; gap: .8rem; align-items: flex-start; box-shadow: 0 1px 2px rgba(0,0,0,.1); }
+    .num { background: #1877f2; color: #fff; border-radius: 50%; min-width: 2rem; height: 2rem;
+           display: flex; align-items: center; justify-content: center; font-weight: bold; }
+    .step p { margin: 0; line-height: 1.4; }
+    a.btn { display: block; text-align: center; background: #1877f2; color: #fff;
+            padding: 1rem; border-radius: 10px; text-decoration: none; font-weight: bold;
+            font-size: 1.1rem; margin-top: 1.2rem; }
+    .note { font-size: .85rem; color: #65676b; text-align: center; margin-top: 1rem; line-height: 1.4; }
   </style>
 </head>
 <body>
-  <h2>Leave a review</h2>
-  <p>Tap each button and tell me which one works:</p>
+  <div class="wrap">
+    <h1>Thank you for visiting us!</h1>
+    <p class="sub">It takes less than a minute to follow us and leave a review.</p>
 
-  <a class="btn" href="fb://facewebmodal/f?href=https%3A%2F%2Fwww.facebook.com%2FPhilippineAssociationofWellnessandAesthetics%2Freviews">A: Open inside Facebook app</a>
+    <div class="step"><div class="num">1</div>
+      <p>Tap the blue button below to open our Facebook page.</p></div>
 
-  <a class="btn" href="intent://www.facebook.com/PhilippineAssociationofWellnessandAesthetics/reviews#Intent;scheme=https;package=com.android.chrome;end">B: Force open in Chrome</a>
+    <div class="step"><div class="num">2</div>
+      <p>Tap <b>Follow</b> (or <b>Like</b>) at the top of the page.</p></div>
 
-  <a class="btn" href="https://m.facebook.com/PhilippineAssociationofWellnessandAesthetics/reviews">C: Mobile site</a>
+    <div class="step"><div class="num">3</div>
+      <p>Look for the <b>Reviews</b> tab under our page name and tap it. If you don't see it, tap <b>More</b> to find <b>Reviews</b> or <b>Recommendations</b>.</p></div>
+
+    <div class="step"><div class="num">4</div>
+      <p>Choose <b>Yes</b> if you recommend us, then write a short comment about your experience.</p></div>
+
+    <div class="step"><div class="num">5</div>
+      <p>Tap <b>Post</b>. Thank you so much!</p></div>
+
+    <a class="btn" href="https://www.facebook.com/PhilippineAssociationofWellnessandAesthetics">Open our Facebook page</a>
+
+    <p class="note">You need to be logged in to Facebook to leave a review.</p>
+  </div>
 </body>
 </html>
