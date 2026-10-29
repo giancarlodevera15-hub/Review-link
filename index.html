@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leave a review</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 3rem 1rem; }
-    a.btn { display: inline-block; margin-top: 1rem; padding: .8rem 1.4rem;
+    body { font-family: sans-serif; text-align: center; padding: 2rem 1rem; }
+    a.btn { display: block; max-width: 320px; margin: .8rem auto; padding: .9rem 1rem;
             background: #1877f2; color: #fff; border-radius: 8px; text-decoration: none; }
   </style>
-  <script>
-    setTimeout(() => {
-      window.location.replace("https://www.facebook.com/PhilippineAssociationofWellnessandAesthetics/reviews");
-    }, 500);
-  </script>
 </head>
 <body>
-  <h2>Taking you to our review page…</h2>
-  <p>If nothing happens, tap the button below.</p>
-  <a class="btn" href="https://www.facebook.com/PhilippineAssociationofWellnessandAesthetics/reviews">Leave a review</a>
+  <h2>Leave a review</h2>
+  <p>Tap each button and tell me which one works:</p>
+
+  <a class="btn" href="fb://facewebmodal/f?href=https%3A%2F%2Fwww.facebook.com%2FPhilippineAssociationofWellnessandAesthetics%2Freviews">A: Open inside Facebook app</a>
+
+  <a class="btn" href="intent://www.facebook.com/PhilippineAssociationofWellnessandAesthetics/reviews#Intent;scheme=https;package=com.android.chrome;end">B: Force open in Chrome</a>
+
+  <a class="btn" href="https://m.facebook.com/PhilippineAssociationofWellnessandAesthetics/reviews">C: Mobile site</a>
 </body>
 </html>
